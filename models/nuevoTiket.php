@@ -25,12 +25,11 @@ public static function addTiket($data){
     $datos = [ 
                 'usu_id'=> $data['usu_id'],
                 'cat_id'=> $data['categoria_id'],
-                'titulo'=> $data['usu_id'],
+                'titulo'=> $data['tick_titulo'],
                 'descripcion'=> $data['tick_descrip']
             ];
 
     $insert = DB::insert($tablaTiket,$datos);
     return $insert;
 }
-
 }
