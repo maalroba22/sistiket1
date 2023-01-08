@@ -14,7 +14,7 @@
             </a>
         </li>
         <li class="blue-dirty">
-            <a href="tables.html">
+            <a href="consultarTiket.php">
                 <span class="glyphicon glyphicon-th"></span>
                 <span class="lbl">Consultar Tiket</span>
             </a>

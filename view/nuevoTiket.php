@@ -40,27 +40,26 @@
 						<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION['SISTIKET']['usuario_id']?>">
 
 						<div class="col-lg-6">
-							<fieldset class="form-group">
+							
 								<label class="form-label semibold" for="exampleInput">Categoria</label>
 								<select id="categoria_id" name="categoria_id" class="form-control">
-									<option value="1">perro</option>
-									<option value="2">gato</option>
+									
 								</select>
-							</fieldset>
+							
 						</div>
 						<div class="col-lg-6">
-							<fieldset class="form-group">
+							
 								<label class="form-label semibold" for="tick_titulo">Titulo</label>
 								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo">
-							</fieldset>
+							
 						</div>
 						<div class="col-lg-12">
-							<fieldset class="form-group">
+							
 								<label class="form-label semibold" for="tick_descrip">Descripción</label>
 								<div class="summernote-theme-1">
 									<textarea id="tick_descrip" name="tick_descrip" class="summernote" name="name"></textarea>
 								</div>
-							</fieldset>
+							
 						</div>
 						<div class="col-lg-12">
 							<!-- <button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button> -->

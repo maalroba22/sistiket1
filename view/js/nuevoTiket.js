@@ -1,7 +1,3 @@
-function initdata(){
-
-}
-
 $(document).ready(function () {
     $('#tick_descrip').summernote({
       height: 150
@@ -43,6 +39,21 @@ $("#ticket_form").submit(function (e) {
       dataType: "json",
       success: function (response) {
          console.log(response)
+         if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()==''){
+            swal("Advertencia!", "Campos Vacios", "warning")
+            return
+         }
+         swal({
+            title: "Exito!",
+            text: "Ticket Guardado Correctamente!",
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Aceptar",
+            showConfirmButton: false,
+         timer: 1500
+         });
+                  
+      
 
       }
    });
