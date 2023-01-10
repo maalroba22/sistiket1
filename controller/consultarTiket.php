@@ -15,19 +15,22 @@ switch ($method) {
                         $campos[]= $row['categoria'];
                         $campos[]= $row['titulo'];
                         $campos[]= $row['descripcion'];
-                        $campos[]= $row['nombre'];
+                        $campos[]= date("d/m/y H:i:s", strtotime($row['fecha_creacion']));
+                        $row['estadot']==1 ? $campos[]='<span class="label label-pill label-success">Abierto</span>': $campos[]='<span class="label label-pill label-danger">Cerrado</span>' ;
+                        $campos[]='<button type="button" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';       
+                       
                         $data[]=$campos;
                     }
-                    $results = array(
+                    $results = [
                         "sEcho"=>1,
                         "iTotalRecords"=>count($data),
                         "iTotalDisplayRecords"=>count($data),
-                        "aaData"=>$data);
+                        "aaData"=>$data
+                    ];
                     echo json_encode($results);
+                        
                     break;
             }
 
         break;
-    
-   
 }
