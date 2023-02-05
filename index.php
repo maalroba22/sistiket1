@@ -20,15 +20,19 @@
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
+        
                 <form class="sign-box" id="login">
+                     <!-- input control de acceso -->
+                     <input type="hidden" name="rol_id" id="rol_id" value="1">
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
-                    <header class="sign-title">Sign In</header>
+                    <header class="sign-title" id="lb_titulo">Acceso Usuario</header>
                     <div class="form-group" id="error">
                         
                     </div>
                     <div class="form-group">
+                        
                         <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail or Phone" />
                     </div>
                     <div class="form-group">
@@ -37,7 +41,10 @@
                     <div class="form-group">
                         
                         <div class="float-right reset">
-                            <a href="reset-password.html">Reset Password</a>
+                            <a href="#">Cambiar Clave</a>
+                        </div>
+                        <div class="float-left reset">
+                            <a href="#" id="btn_soporte">Acceso Soporte</a>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-rounded" >Iniciar Sesion</button>
@@ -75,6 +82,7 @@
     </script>
     <script src="public/js/app.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

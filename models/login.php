@@ -6,6 +6,7 @@ class SingUp
 
     public static function login($data)
     {
+      
         include_once('../config/init_db.php');
         DB::$encoding = 'utf8_decode'; // defino formato de caracteres
         $email = $data['email'];
@@ -26,6 +27,7 @@ class SingUp
         $usuario = DB::queryFirstRow("SELECT usuario_id,
                                         CONCAT(nombre, ' ', apellidos) AS nombre,
                                         email,
+                                        rol_id,
                                         PASSWORD
                                     FROM
                                         usuario
@@ -41,6 +43,8 @@ class SingUp
                 $usuario['nombre_completo']=$usuario['nombre'];
                 @session_start();
                 $_SESSION['SISTIKET'] = $usuario;
+
+                
             $validate['error']= false;
             $validate['msg']='Acceso al sistema';
             return $validate;
