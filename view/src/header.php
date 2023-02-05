@@ -34,10 +34,8 @@
                 <div class="mobile-menu-right-overlay"></div>
 
                 <input type="hidden" id="user_idx" value="<?php ?>"><!-- ID del Usuario-->
-                <input type="hidden" id="rol_idx" value="<?php ?>"><!-- Rol del Usuario-->
-
-                <input type="hidden" id="user_idx" value="<?php ?>"><!-- ID del Usuario-->
-                <input type="hidden" id="usu_id" value="<?php echo $_SESSION['SISTIKET']['usuario_id'] ?>"><!-- Rol del Usuario-->
+                <input type="hidden" id="usu_id" value="<?php echo $_SESSION['SISTIKET']['usuario_id'] ?>"><!-- ID del Usuario-->
+                <input type="hidden" id="usu_id" value="<?php echo $_SESSION['SISTIKET']['rol_id'] ?>"><!-- Rol del Usuario-->
                
 
                 <div class="dropdown dropdown-typical">
@@ -45,6 +43,7 @@
                         <span class="font-icon font-icon-home"></span>
                         <span class="font-icon font-icon-user"></span>
                         <span class="lblcontactonomx"><?php echo $_SESSION['SISTIKET']['nombre_completo']; ?></span>
+                        
                        
                     </a>
                 </div>
