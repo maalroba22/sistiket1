@@ -12,7 +12,8 @@
 
 <!-- sweet Alert -->
 <script src="../public/js/lib/bootstrap-sweetalert/sweetalert.min.js"></script>
+<script src="../public/js/lib/fancybox/jquery.fancybox.pack.js"></script>
 
 <!-- Bootstrap Notify -->
-<script src="js/lib/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="js/lib/bootstrap-notify/bootstrap-notify-init.js"></script>
+<script src="../public/js/lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../public/js/lib/bootstrap-notify/bootstrap-notify-init.js"></script>

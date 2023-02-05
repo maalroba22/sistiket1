@@ -22,6 +22,12 @@ if ($_SESSION['SISTIKET']['rol_id'] == 1) {
                     <span class="lbl">Consultar Tiket</span>
                 </a>
             </li>
+            <li class="blue-dirty">
+                <a href="detalleTiket.php">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Consultar Tiket</span>
+                </a>
+            </li>
         </ul>
         </section>
     </nav>
@@ -40,9 +46,15 @@ if ($_SESSION['SISTIKET']['rol_id'] == 1) {
                 </a>
             </li>
             <li class="blue-dirty">
-                <a href="tables.html">
+                <a href="consultarTiket.php">
                     <span class="glyphicon glyphicon-th"></span>
                     <span class="lbl">Ver Tiket</span>
+                </a>
+            </li>
+            <li class="blue-dirty">
+                <a href="detalleTiket.php">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Detalle Tiket</span>
                 </a>
             </li>
         </ul>
